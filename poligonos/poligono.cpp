@@ -70,6 +70,12 @@ float Poligono::area()
     return 0.5*(a);
 }
 
+void Poligono::translada(float a, float b)
+{
+    for(int i=0; numVertice < i; i++)
+        vertice[i].Ponto::translada(a,b);
+}
+
 void Poligono::imprimir()
 {
     for(int i=0; i < numVertice; i++){

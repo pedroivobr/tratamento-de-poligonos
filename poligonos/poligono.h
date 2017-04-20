@@ -14,6 +14,8 @@ public:
     void setVertice(float x,float y);
     int numeroVertices();
     void rotacionar(Ponto,float);
+    float area();
+    void translada(float,float);
     void imprimir();
 };
 
