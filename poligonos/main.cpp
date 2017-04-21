@@ -7,8 +7,12 @@ using namespace std;
 
 int main()
 {
-    Retangulo re(4,2,4,2);
-    cout << re.numeroVertices() << endl; //deveria mostrar valor 4
+    Retangulo re(0,0,4,3);
     re.imprimir();
+    cout << "\nArea do retangulo : " << re.area() << endl;
+    re.translada(-3,4);
+    cout << "Area do retangulo transladado: " << re.area() << endl;
+    re.rotacionar(-2,-1.5,30);
+    cout << "Area do retangulo rotacionado: " << re.area() << endl;
     return 0;
 }

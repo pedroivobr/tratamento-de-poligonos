@@ -13,7 +13,7 @@ public:
     void setVertice(Ponto);
     void setVertice(float x,float y);
     int numeroVertices();
-    void rotacionar(Ponto,float);
+    void rotacionar(float x,float y,float theta);
     float area();
     void translada(float,float);
     void imprimir();
