@@ -18,7 +18,7 @@ public:
     Ponto sub(Ponto);
     float norma();
     void translada(float,float);
-    void imprimir();
+    void imprimirPonto();
 };
 
 #endif // PONTO_H

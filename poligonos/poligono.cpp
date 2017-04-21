@@ -24,7 +24,7 @@ void Poligono::setVertice(float x, float y)
     if(numVertice < 99){
         vertice[numVertice].setXY(x,y);
         numVertice++;
-        std::cout << "\nPonto inserido "<< std::endl;
+        std::cout << "\nPonto inserido "<< numVertice << std::endl;
     }
     else{
         std::cout << "O limite maximo dos numeros de pontos foi atingido!";
@@ -79,7 +79,8 @@ void Poligono::translada(float a, float b)
 void Poligono::imprimir()
 {
     for(int i=0; i < numVertice; i++){
-        std::cout << "( " << vertice[i].getX() << ", " << vertice[i].getY() << ") ->";
+        vertice[i].imprimirPonto();
+        std::cout << " ->";
     }
 }
 

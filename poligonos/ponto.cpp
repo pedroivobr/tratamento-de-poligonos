@@ -68,7 +68,8 @@ void Ponto::translada(float a, float b)
     y = y + b;
 }
 
-void Ponto::imprimir()
+void Ponto::imprimirPonto()
+
 {
     std::cout << "( "<< x << ", " << y << ")";
 }

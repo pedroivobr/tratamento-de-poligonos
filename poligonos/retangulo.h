@@ -6,9 +6,9 @@
 class Retangulo : public Poligono
 {
 private:
-    Poligono retangulo;
+    Poligono* retangulo;
 public:
-    Retangulo(float, float, float, float);
+    Retangulo(float x, float y, float largura, float altura);
 };
 
 #endif // RETANGULO_H

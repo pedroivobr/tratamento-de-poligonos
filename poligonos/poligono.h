@@ -6,7 +6,7 @@
 class Poligono : public Ponto
 {
 private:
-    Ponto vertice[99]; //ultimo sempre sera usado com o valor do primeiro nas funções
+    Ponto* vertice = new Ponto [99]; //ultimo sempre sera usado com o valor do primeiro nas funções
     int numVertice=0;
 public:
     Poligono();
