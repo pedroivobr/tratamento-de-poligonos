@@ -51,23 +51,19 @@ void Poligono::rotacionar(float x, float y, float theta)
 
       // translate point back:
       vertice[i].setX(xnew + x);
-      vertice[i].setX(ynew + y);
+      vertice[i].setY(ynew + y);
       }
 }
 
 float Poligono::area()
 {
-    float a;
-    int i=0, j = numVertice -1;
-    for(i=0; i < numVertice; i++)
-    {
-        a = a + (vertice[i].getX() + vertice[j].getX())*(vertice[j].getY() - vertice[i].getY());
-        j = i;
-    }
-    //modulo
-    a = a*a;
-    a = sqrt(a);
-    return 0.5*(a);
+    float area=0;
+    for(int i=0; i < numVertice - 1;i++){
+            area += (vertice[i].getX()*vertice[i+1].getY() - vertice[i].getY()*vertice[i+1].getX());
+        }
+
+    area += (vertice[numVertice - 1].getX()*vertice[0].getY() - vertice[numVertice - 1].getY()*vertice[0].getX());
+    return 0.5*(abs(area));
 }
 
 void Poligono::translada(float a, float b)

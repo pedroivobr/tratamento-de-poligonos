@@ -19,7 +19,7 @@ void Ponto::setX(float _x)
 
 void Ponto::setY(float _y)
 {
-    x = _y;
+    y = _y;
 }
 
 void Ponto::setXY(float _x, float _y)
