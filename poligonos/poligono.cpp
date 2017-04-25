@@ -5,7 +5,12 @@
 
 Poligono::Poligono()
 {
+    //Construtor Poligono
+}
 
+Poligono::~Poligono()
+{
+    //Destrutor Poligono
 }
 
 void Poligono::setVertice(Ponto ponto)

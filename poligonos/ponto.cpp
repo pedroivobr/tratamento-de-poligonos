@@ -12,6 +12,11 @@ Ponto::Ponto(float _x, float _y)
     y = _y;
 }
 
+Ponto::~Ponto()
+{
+    //Destrutor Ponto
+}
+
 void Ponto::setX(float _x)
 {
     x = _x;

@@ -7,3 +7,8 @@ Retangulo::Retangulo(float x, float y, float largura, float altura){
     this->setVertice(x - largura, y - altura);
     this->setVertice(x,y-altura);
 }
+
+Retangulo::~Retangulo()
+{
+    //destrutor retangulo
+}
